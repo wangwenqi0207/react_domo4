@@ -1,0 +1,30 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+ 
+.mainDiv{
+    display: flex;
+    width: 100%;
+}
+
+.leftNav{
+    width: 16%;
+    background-color: #001529;
+    color:#1890ff;
+    font-size:20px;
+    height: 1000px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.leftNav li{
+    margin-top: 20px;
+}
+
+.rightMain{
+    width: 84%;
+    height:1000px;
+    background-color: #fff;
+    font-size:16px;
+}
