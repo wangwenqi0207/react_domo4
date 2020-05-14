@@ -1,28 +1,29 @@
 import React,{Component} from 'react'
-import { Route, Link} from 'react-router-dom'
-import Button1 from './pages/Button1'
-import Button2 from './pages/Button2'
+import { Route, Link,Redirect} from 'react-router-dom'
+import GridDemo from './pages/Grid'
+import LayoutDemo from './pages/LayoutDemo'
 
 import './css/AntdDemo1.css'
  
 class AntdDemo2 extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { }
     }
     render() { 
         return(
             <div>
                 <div className='topNav'>
                     <ul>
-                        <li><Link to='/AntdDemo2/Button1/'>button1</Link></li>
-                        <li><Link to='/AntdDemo2/Button2/'>button2</Link></li>
+                        <li><Link to='/AntdDemo2/Grid/'>栅格</Link></li>
+                        <li><Link to='/AntdDemo2/Layout/'>Layout布局</Link></li>
                     </ul>
                 </div>
                 <div className='videoContent'>
                     <div>
-                        <Route path='/AntdDemo2/Button1/' component={Button1} />
-                        <Route path='/AntdDemo2/Button2/' component={Button2} />
+                        <Route path='/AntdDemo2/Grid/' component={GridDemo} />
+                        <Route path='/AntdDemo2/Layout/' component={LayoutDemo} />
+                        <Redirect to='/AntdDemo2/Grid/' exact></Redirect>
                     </div>
                 </div>
             </div>    

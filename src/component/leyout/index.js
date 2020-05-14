@@ -4,6 +4,10 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom'  //引入�
 import AntdDemo1 from '../antd/AntdDemo1' //二级路由
 import AntdDemo2 from '../antd/AntdDemo2' 
 import AntdDemo3 from '../antd/AntdDemo3' 
+import AntdDemo4 from '../antd/AntdDemo4'
+import AntdDemo5 from '../antd/AntdDemo5'
+import AntdDemo6 from '../antd/AntdDemo6'
+import AntdDemo7 from '../antd/AntdDemo7'
 import './css/Router.css'
  
 //假设是后端获取的动态路由
@@ -12,6 +16,10 @@ function AppRouter(){
         {path:'/AntdDemo1',title:'通用组件',exact:false,component:AntdDemo1},
         {path:'/AntdDemo2',title:'布局',exact:false,component:AntdDemo2},
         {path:'/AntdDemo3',title:'导航',exact:false,component:AntdDemo3},
+        {path:'/AntdDemo4',title:'数据录入',exact:false,component:AntdDemo4},
+        {path:'/AntdDemo5',title:'数据展示',exact:false,component:AntdDemo5},
+        {path:'/AntdDemo6',title:'反馈',exact:false,component:AntdDemo6},
+        {path:'/AntdDemo7',title:'其他',exact:false,component:AntdDemo7},
     ]
     return(
         <Router>
